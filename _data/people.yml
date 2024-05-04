@@ -1,19 +1,36 @@
-instructors:
-  - name: Albus Dumbledore
-    profile_pic: /_images/pp/dumbledore.jpg
-    webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
-  - name: Minerva McGonagall
-    profile_pic: /_images/pp/mcgonagall.jpg
+Faculty:
+  - name: Stefano FUSI
+    profile_pic: /_images/pp/fusi.jpg
+    webpage: https://zuckermaninstitute.columbia.edu/stefano-fusi-phd
+  - name: Wulfram GERSTNER
+    profile_pic: /_images/pp/gerstner.jpg
+    webpage: https://lcnwww.epfl.ch/gerstner/
+  - name: Yiota POIRAZI
+    profile_pic: /_images/pp/poirazi.jpg
+  - name: Gianluigi MONGILLO
+    profile_pic: /_images/pp/mongillo.jpg
+  - name: Giancarlo LA CAMERA
+    profile_pic: /_images/pp/lacamera.jpg
+  - name: Alessandro TREVES
+    profile_pic: /_images/pp/treves.jpg
+  - name: Michele MIGLIORE
+    profile_pic: /_images/pp/migliore.jpg
+    
+    
 
-teaching_assistants:
-  - name: Harry Potter
-    profile_pic: /_images/pp/potter.jpg
-    webpage: https://en.wikipedia.org/wiki/Harry_Potter_(character)
+Organizers:
+  - name: Michele GIUGLIANO
+    profile_pic: /_images/pp/giugliano.png
+    webpage: https://giugliano.info/cv
 
-  - name: Hermione Granger
-    profile_pic: /_images/pp/granger.jpg
-    webpage: https://en.wikipedia.org/wiki/Hermione_Granger
+  - name: Maurizio MATTIA
+    profile_pic: /_images/pp/mattia.jpg
+    webpage: https://scholar.google.com/citations?user=GEyFcaQAAAAJ&hl=en
 
-  - name: Ron Weasley
-    profile_pic: /_images/pp/weasley.jpg
-    webpage: https://en.wikipedia.org/wiki/Ron_Weasley
+  - name: Jonathan MAPELLI
+    profile_pic: /_images/pp/mapelli.jpg
+    webpage: https://personale.unimore.it/rubrica/dettaglio/jmapelli
+    
+  - name: Stefani FERRAINA
+    profile_pic: /_images/pp/ferraina.jpg
+    webpage: https://phd.uniroma1.it/web/STEFANO-FERRAINA_nC479_IT.aspx
