@@ -33,14 +33,14 @@ layout: default
             </div> -->
 
             <div class="profile-pic-gallary ">
-                <h2>Instructors</h2>
+                <h2>Faculty</h2>
                 {% for ins in site.data.people.instructors %}
                 <div class="image--cover-container">
-                    <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
-                    {% if ins.webpage %}
-                    <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
+                    <img src="{{fac.profile_pic | prepend: site.baseurl }}" class="image--cover">
+                    {% if fac.webpage %}
+                    <p><a href="{{ fac.webpage }}">{{fac.name}}</a></p>
                     {% else %}
-                    <p>{{ins.name}}</p>
+                    <p>{{fac.name}}</p>
                     {% endif %}
                 </div>
                 {% endfor %}
@@ -49,14 +49,14 @@ layout: default
 
         <div style="width:65%; float: left">
             <div class="profile-pic-gallary ">
-                <h2>Teaching Assistants</h2>
-                {% for ta in site.data.people.teaching_assistants %}
+                <h2>Organizers</h2>
+                {% for ta in site.data.people.organizers %}
                 <div class="image--cover-container">
-                    <img src="{{ta.profile_pic | prepend: site.baseurl }}" class="image--cover">
-                    {% if ta.webpage %}
-                    <p><a href="{{ ta.webpage }}">{{ta.name}}</a></p>
+                    <img src="{{organizers.profile_pic | prepend: site.baseurl }}" class="image--cover">
+                    {% if organizers.webpage %}
+                    <p><a href="{{ organizers.webpage }}">{{organizers.name}}</a></p>
                     {% else %}
-                    <p>{{ta.name}}</p>
+                    <p>{{organizers.name}}</p>
                     {% endif %}
                 </div>
                 {% endfor %}
