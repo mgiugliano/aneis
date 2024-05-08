@@ -1,14 +1,6 @@
-# Principles of Computational Neurosciences
+# ANEIS - Summer School - 1st Edition
 
-GitHub Repository for the Course.
+Applied Neurosciences EBRAINS-Italy School: Linking Neurotechnology to Clinics
 
-**UniTs**
-- Credits:          3
-- Course code:      931SV
-- Corso di Laurea:  SM54 - Neuroscience
-- Start:            Fri 29 September 2023
-- End:              Fri 10 November 2023
-- Class schedule:   9am(sharp)-11:45am or 10am(sharp)-12:45pm
-- Venue:            Aula ex-CLA, Edificio C1
-
+GitHub Repository for the Course website and hands-on tutorial.
 

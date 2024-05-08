@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Principles of Computational Neuroscience</title>
+	<title>ANEIS Summer School</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -26,25 +26,23 @@
 		<header id="header">
 			<div class="content">
 				<div class="inner">
-					<h1>Principles of <br> Computational Neuroscience</h1>
 					<img src="images/coverart.png" alt="Cover art goes here!">
+					<h1> ANEIS </h1>
+					<h1> Applied Neurosciences School <br> EBRAINS-Italy </h1>
+					<h2> Linking Neurotechnology to Clinics</h2>
 
-					<p>An introductory course</p> 
-					<br> Kickoff Sep 2023: click <a
-							href="https://www.giugliano.info/email.pdf">here</a>.
-					<!-- offered to<br> (under)grad Neurosciences students at <a
-							href="https://dsv.units.it/en/content/neuroscience-master-degree-programme-3">UniTs</a> and
-						<a href="https://www.sissa.it/neuroscience">SISSA</a>, Trieste (Italy).
-					</p> -->
+					<h3>September 8-14, 2024</h3> 
+					<h3> Ventotene Island, Latina (Italy) <br><h3>
+						<h2 id="demo"></h2>
 				</div>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#aims">Aims</a></li>
-					<li><a href="#schedule">Schedule</a></li>
-					<li><a href="#content">Content</a></li>
-					<li><a href="#discord">Discord</a></li>
-					<li><a href="#resources">Resources</a></li>
+					<li><a href="#aims">Speakers</a></li>
+					<li><a href="#schedule">Programme</a></li>
+					<li><a href="#content">Register</a></li>
+					<li><a href="#discord">Travel</a></li>
+					<li><a href="#resources">Hands-on Projects</a></li>
 					<!--<li><a href="#elements">Elements</a></li>-->
 				</ul>
 			</nav>
@@ -475,12 +473,61 @@
 			</article>
 		</div>
 
+
+
+
+
+<iframe id=bg-video
+      src="https://www.youtube.com/embed/HD15yiUuAEY?autoplay=1&mute=1&controls=0&loop=1&end=61"
+      frameBorder=0 allowFullScreen allow=autoplay /></iframe>
+
 		<!-- Footer -->
 		<footer id="footer">
 			<p class="copyright">&copy; Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 		</footer>
 
 	</div>
+
+
+
+       <!-- Adding JavaScript code -->
+        <script>
+            // Converting string to required date format 
+            let deadline = new Date("Sep 8, 2024 0:00:00")
+                            .getTime();
+ 
+            // To call defined fuction every second
+            let x = setInterval(function () {
+                 
+                // Getting current time in required format
+                let now = new Date().getTime();
+ 
+                // Calculating the difference
+                let t = deadline - now;
+ 
+                // Getting value of days, hours, minutes, seconds
+                let days = Math.floor(t / (1000 * 60 * 60 * 24));
+                let hours = Math.floor(
+                    (t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor(
+                    (t % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor(
+                    (t % (1000 * 60)) / 1000);
+ 
+                // Output the remaining time
+                document.getElementById("demo").innerHTML =
+                    days + "d " + hours + "h " + 
+                    minutes + "m " + seconds + "s ";
+ 
+                // Output for over time
+                if (t < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo")
+                            .innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+
 
 	<!-- BG -->
 	<div id="bg"></div>
@@ -491,7 +538,6 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
