@@ -14,6 +14,29 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+        /* Style for the list items */
+        article#speakers ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        article#speakers li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        article#speakers img {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -31,18 +54,19 @@
 					<h1> Applied Neurosciences School <br> EBRAINS-Italy </h1>
 					<h2> Linking Neurotechnology to Clinics</h2>
 
-					<h3>September 8-14, 2024</h3> 
+					<h3>September 8-14, 2024</h3>
 					<h3> Ventotene Island, Latina (Italy) <br><h3>
 						<h2 id="demo"></h2>
 				</div>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#aims">Speakers</a></li>
-					<li><a href="#schedule">Programme</a></li>
-					<li><a href="#content">Register</a></li>
-					<li><a href="#discord">Travel</a></li>
-					<li><a href="#resources">Hands-on Projects</a></li>
+					<li><a href="#aim">Aim</a></li>
+					<li><a href="#speakers">Speakers</a></li>
+					<li><a href="#programme">Programme</a></li>
+					<li><a href="#register">Register</a></li>
+					<li><a href="#travel">Travel</a></li>
+					<li><a href="#resources">Hands-on</a></li>
 					<!--<li><a href="#elements">Elements</a></li>-->
 				</ul>
 			</nav>
@@ -50,10 +74,9 @@
 
 		<!-- Main -->
 		<div id="main">
-
 			<!-- Intro -->
-			<article id="aims">
-				<h2 class="major">Aims</h2>
+			<article id="aim">
+				<h2 class="major">Aim</h2>
 				<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 
 				<p> Over the past decades, hard sciences such as Chemistry and Biology witnessed the emergence of
@@ -94,8 +117,8 @@
 			</article>
 
 			<!-- Schedule -->
-			<article id="schedule">
-				<h2 class="major">Schedule</h2>
+			<article id="programme">
+				<h2 class="major">Programme</h2>
 				<b>08/09/24</b>
 				<ul>
 					<li> Arrival of the delegates and welcome </li>
@@ -112,7 +135,7 @@
 					</li>
 					<p>Afternoon: Hands-on Projects </p>
 				</ul>
-				
+
 				<b>10/09/24</b>
 				<ul>
 					<li>  Neuroinformatics/Computational neuroscience
@@ -124,11 +147,11 @@
 					</li>
 					<p>Afternoon: Hands-on Projects </p>
 				</ul>
-				
+
 				<b>11/09/24</b>
 				<ul>
-					<li>  Theoretical/Computation neuroscience 
-					
+					<li>  Theoretical/Computation neuroscience
+
 					<ul>
 				                <li>Gianluigi Mongillo</li>
 				                <li>Alessandro Treves</li>
@@ -153,7 +176,7 @@
 				<ul>
 					<li> Clinical neuroscience
 					<ul>
-				                <li>Giacomo Kock</li>
+				                <li>Giacomo Koch</li>
 				                <li>Pierpaolo Sorrentino</li>
 				                <li>Pietro Avanzini</li>
 				        </ul>
@@ -163,10 +186,59 @@
 				</ul>
 			</article>
 
+
+			<article id="speakers">
+				<h2 class="major">Speakers</h2>
+				<ul>
+				  <li><img src="images/ppl/poirazi1.png" alt="poirazi">
+				    Panayiota Poirazi (IMBB-FORTH)</li>
+				  <li><img src="images/ppl/fusi.jpg" alt="fusi">
+				    Stefano Fusi (Columbia's Zuckerman Institute)</li>
+				  <li><img src="images/ppl/gerstner1.jpg" alt="gerstner">
+				    Wulfram Gerstner (EPFL)</li>
+					<li><img src="images/ppl/migliore1.jpg" alt="migliore">
+				    Michele Migliore (CNR IBF)</li>
+					<li><img src="images/ppl/lacamera1.jpg" alt="lacamera">
+				     Giancarlo La Camera (Stony Brook University)</li>
+					<li><img src="images/ppl/mongillo1.jpg" alt="mongillo">
+				    Gianluigi Mongillo (CNRS)</li>
+					<li><img src="images/ppl/avatar.jpg" alt="">
+				    Mavi Sanche-Vives (UNIROMA1)</li>
+					<li><img src="images/ppl/avatar.jpg" alt="">
+				    Andrea D'Avella (UNIME)</li>
+					<li><img src="images/ppl/avatar.jpg" alt="">
+				    Antonino Cattaneo (Scuola Normale Superiore, Pisa)</li>
+					<li><img src="images/ppl/avatar.jpg" alt="">
+				    Alessandro Treves (SISSA)</li>
+					<li><img src="images/ppl/avatar.jpg" alt="">
+						Alberto Mazzoni (Scuola Superiore Sant'Anna)</li>
+					<li><img src="images/ppl/avatar.jpg" alt="">
+						Giacomo Koch (UNIFE)</li>
+					<li><img src="images/ppl/avatar.jpg" alt="">
+						Pierpaolo Sorrentino (UNISS)</li>
+					<li><img src="images/ppl/avatar.jpg" alt="">
+						Pietro Avanzini (CNR)</li>
+				</ul>
+
+				<p><b>Organizers</b></p>
+				<ul>
+					<li><img src="images/ppl/giugliano1.png" alt="giugliano">
+				    Michele Giugliano (UNIMORE)</li>
+					<li><img src="images/ppl/ferraina1.jpg" alt="ferraina">
+				     Stefano Ferraina (UNIROMA1)</li>
+					<li><img src="images/ppl/mapelli1.jpg" alt="mapelli">
+				    Jonathan Mapelli (UNIMORE)</li>
+					<li><img src="images/ppl/mattia1.jpg" alt="mattia">
+				    Maurizio Mattia (ISS)</li>
+				</ul>
+
+			</article>
+
+
 			<!-- Content -->
-			<article id="content">
+			<article id="register">
 				<h2 class="major">Registration</h2>
-				<p>Register using the Google <a href="https://docs.google.com/forms/d/e/1FAIpQLSesqHumshWQKtNVd1IXy9p5JASfOdk79MS82C7khKcjIUSDJA/viewform"> FORM </a></p>.
+				<p>Register using the Google <a href="https://docs.google.com/forms/d/e/1FAIpQLSesqHumshWQKtNVd1IXy9p5JASfOdk79MS82C7khKcjIUSDJA/viewform"> FORM </a></p>
 				<p>You will need: </p>
 				<u1>
 					<li> A raccomandation letter written by a senior resercher</li>
@@ -177,122 +249,16 @@
 			</article>
 
 
-
-
-			<!-- Community -->
-			<article id="discord">
-				<h2 class="major">Discord & Code of Conduct</h2>
-				<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-
-				<p> We built a <i>Discord server</i> as an (online, real-time) virtual meeting place and as an (offline,
-					asynchronous) forum for questions and answers, for discussions on topics of the course, as well as for the students to offer mutual assistance during their study process. Access is reserved only to students attending the course.
-				<p>
-
-				<ul class="icons">
-					<center>
-						<li><a href="https://discord.gg/U9VUM49wS" class="icon brands fa-discord"><span
-									class="label">Discord</span></a></li>
-					</center>
-				</ul>
-
-				<p> If you do qualify as a legitimate member of our community, simply click on the icon above. <b>Watch
-						out!!</b> After clicking, you will get an error. Then, please edit the URL address you navigate to upon the first click, and add at its very end an extra "five" as a number. This precaution should make life slightly difficult for automated spam BOTs and scammers.</p>
-				<p>
-
-				<p>Before joining, please do take a serious look at our Code of Conduct, below:</p>
-
-				<p><b>Code of Conduct of our Class/Discord Server</b></p>
-
-				<p>We are committed to creating a collaborative, open, and inclusive teaching and learning environment.
-					All students, teaching assistants, affiliated faculty, organizers and contributors are expected to
-					adhere to this Code of Conduct.</p>
-
-				<p>Participants or affiliates who are asked to stop any inappropriate behaviour are expected to comply
-					immediately. This applies to any events and platforms, either online or in-person. If a participant
-					engages in behaviour that violates this Code of Conduct, the organisers may warn the offender, ask
-					them to leave the event or platform, or engage UniTs/SISSA&rsquo;s Ombuds Offices to investigate the
-					Code of Conduct violation and impose appropriate sanctions.</p>
-
-				<p>Violations of the Code of Conduct should be reported to MG.</p>
-
-				<p><b>1. Be inclusive</b></p>
-
-				<p>We welcome and support people of all backgrounds and identities. This includes, but is not limited to
-					members of any sexual orientation, gender identity and expression, race, ethnicity, culture,
-					national origin, social and economic class, educational level, color, immigration status, sex, age,
-					size, family status, political belief, religion, and mental and physical ability.</p>
-
-				<p><b>2. Be considerate</b></p>
-
-				<p>We all depend on each other to produce the best work we can as an organization. Your decisions will
-					affect students, teaching assistants, and colleagues around the world, and you should take those
-					consequences into account when making decisions.</p>
-
-				<p><b>3. Be respectful</b></p>
-
-				<p>We won&rsquo;t all agree all the time, but disagreement is no excuse for disrespectful behavior. We
-					will all experience frustration from time to time, but we cannot allow that frustration become
-					personal attacks. An environment where people feel uncomfortable or threatened is not a productive
-					or creative one.
-
-				<p><b>4. Choose your words carefully</b></p>
-
-				<p>Always conduct yourself professionally. Be kind to others. Do not insult or put down others.
-					Harassment and exclusionary behavior aren&rsquo;t acceptable. This includes, but is not limited to:
-				</p>
-
-				<ul>
-					<li>Threats of violence</li>
-					<li>Insubordination</li>
-					<li>Discriminatory jokes and language</li>
-					<li>Sharing sexually explicit or violent material via electronic devices or other means</li>
-					<li>Personal insults, especially those using racist or sexist terms</li>
-					<li>Unwelcome sexual attention</li>
-					<li>Advocating for, or encouraging, any of the above behavior.</li>
-				</ul>
-
-				<p><b>5. Don&rsquo;t harass</b></p>
-
-				<p>In general, if someone asks you to stop something, then stop. When we disagree, try to understand
-					why. Differences of opinion and disagreements are mostly unavoidable. What is important is that we
-					resolve disagreements and differing views constructively.</p>
-
-				<p><b>6. Make differences into strengths</b></p>
-
-				<p>We can find strength in diversity. Different people have different perspectives on issues, and that
-					can be valuable for solving problems or generating new ideas. Being unable to understand why someone
-					holds a viewpoint doesn&rsquo;t mean that they&rsquo;re wrong. Don&rsquo;t forget that we all make
-					mistakes, and blaming each other doesn&rsquo;t get us anywhere. Instead, focus on resolving issues
-					and learning from mistakes.
-
-				<p><b>7. Act honestly and with academic integrity</b></p>
-
-				<p>We expect you to respect basic academic integrity principles and take academic integrity to mean
-					adherence to the following values:</p>
-
-				<ul>
-					<li>Honesty</li>
-					<li>Trust</li>
-					<li>Fairness</li>
-					<li>Respect</li>
-					<li>Responsibility</li>
-					<li>Courage.</li>
-				</ul>
-
-				<p>More information on academic integrity and these values can be found at the <a
-						href="https://academicintegrity.org/images/pdfs/20019_ICAI-Fundamental-Values_R12.pdf"><span
-							class="label">International Center of Academic Integrity</span></a>.</p>
-
-				<p>Be honest in your applications and in your potential reasons for missing classes, or project assignments.
-					Take responsibility for your mistakes and work to remedy them. Don&rsquo;t take the course under
-					someone else&rsquo;s name or identity.</p>
-
+			<article id="travel">
+				<h2 class="major">Travel</h2>
+				<p> How to reach the location: </p>
 			</article>
+
 
 			<!-- Resources -->
 			<article id="resources">
 				<h2 class="major">Hands-on Projects</h2>
-				<p> TBA</p>
+				<p> work in progress</p>
 			</article>
 		</div>
 
@@ -310,21 +276,21 @@
 
 
 
-       <!-- Adding JavaScript code -->
+       <!-- Adding JavaScript code
         <script>
-            // Converting string to required date format 
+            // Converting string to required date format
             let deadline = new Date("Sep 8, 2024 0:00:00")
                             .getTime();
- 
+
             // To call defined fuction every second
             let x = setInterval(function () {
-                 
+
                 // Getting current time in required format
                 let now = new Date().getTime();
- 
+
                 // Calculating the difference
                 let t = deadline - now;
- 
+
                 // Getting value of days, hours, minutes, seconds
                 let days = Math.floor(t / (1000 * 60 * 60 * 24));
                 let hours = Math.floor(
@@ -333,12 +299,12 @@
                     (t % (1000 * 60 * 60)) / (1000 * 60));
                 let seconds = Math.floor(
                     (t % (1000 * 60)) / 1000);
- 
+
                 // Output the remaining time
                 document.getElementById("demo").innerHTML =
-                    days + "d " + hours + "h " + 
+                    days + "d " + hours + "h " +
                     minutes + "m " + seconds + "s ";
- 
+
                 // Output for over time
                 if (t < 0) {
                     clearInterval(x);
@@ -346,8 +312,7 @@
                             .innerHTML = "EXPIRED";
                 }
             }, 1000);
-        </script>
-
+        </script>   -->
 
 	<!-- BG -->
 	<div id="bg"></div>
