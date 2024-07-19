@@ -15,7 +15,11 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<style>
-        /* Style for the list items */
+	/* Reduce margins for headings */
+	h1, h2, h3 {
+    	margin: 0px 0; /* Reduce margin above and below headings */
+	}
+	/* Style for the list items */
         article#speakers ul {
             list-style: none;
             padding: 0;
@@ -23,26 +27,34 @@
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             grid-gap: 20px;
         }
-
         article#speakers li {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
-
         article#speakers img {
             width: 100px; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
             margin-bottom: 10px;
         }
-    </style>
-		<style>
         article#aim p {
             text-align: justify; /* Justify the text */
         }
-				article#aim li {
+	article#aim li {
             text-align: justify; /* Justify the text */
+        }
+	footer {
+	    position:relative;
+	    bottom:0;
+            text-align: center; /* Center the text in the footer */
+            padding: 20px 0;  /*Add padding for spacing */
+        }
+        footer img {
+            max-width: 70%; /* Ensure the image does not exceed the width of its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Allows margin auto to center the image */
+            margin: 0 auto; /* Center the image */
         }
     </style>
 </head>
@@ -331,7 +343,7 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<img src="Banner.png" alt="Banner Image" style="width: 100%; height: auto;">
+			<img src="Banner.png" alt="Banner Image">
 			<p class="copyright">&copy; Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 		</footer>
 
