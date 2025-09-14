@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
+echo "Running pre-commit hook..."
+
+# Run the thumbnail generation script
+echo "Generating thumbnails..."
+php create-thumbnails.php
+
+# Run the script to build the static photos.html page
+echo "Building photos.html..."
+php build-gallery.php
+
+# Add the newly generated/updated files to the commit
+echo "Staging updated files..."
+git add .
+
+echo "Pre-commit hook finished successfully."
